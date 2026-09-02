@@ -157,7 +157,7 @@
   }
   .section-cta { display: flex; justify-content: center; margin-top: 48px; }
   @media (max-width: 640px) {
-    .btn { width: 100%; }
+    .btn { width: 100%; font-size: 11.5px; padding: 0 18px; letter-spacing: 0.06em; }
     .section-cta { width: 100%; }
   }
 
@@ -283,6 +283,33 @@
   }
   .hero-product-name.is-visible { opacity: 1; transform: translateY(0); }
   .hero-product-name span { color: var(--pink-deep); }
+
+  .hero-product-accent{
+    color: var(--pink-bright, #E07A96);
+    color: var(--pink-deep);
+    text-shadow:
+      0 0 12px rgba(224, 122, 150, 0.85),
+      0 0 28px rgba(212, 122, 150, 0.55),
+      0 0 48px rgba(184, 92, 120, 0.35);
+    animation: accentGlow 2.8s ease-in-out infinite alternate;
+  }
+  @keyframes accentGlow{
+    from{
+      text-shadow:
+        0 0 10px rgba(224, 122, 150, 0.7),
+        0 0 22px rgba(212, 122, 150, 0.4),
+        0 0 36px rgba(184, 92, 120, 0.25);
+      filter: brightness(1);
+    }
+    to{
+      text-shadow:
+        0 0 16px rgba(242, 168, 188, 0.95),
+        0 0 36px rgba(224, 122, 150, 0.7),
+        0 0 56px rgba(212, 122, 150, 0.45);
+      filter: brightness(1.12);
+    }
+  }
+
   .hero-title {
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
@@ -792,7 +819,7 @@
       <li><a href="#oferta">Oferta</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a href="https://pay.cakto.com.br/xghj6j4" class="navbar__cta" target="_blank" rel="noopener">QUERO MINHA VAGA</a>
+    <a href="https://pay.cakto.com.br/xghj6j4" class="navbar__cta" target="_blank" rel="noopener">GARANTIR MINHA VAGA</a>
     <button class="navbar__toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -813,7 +840,7 @@
     <li><a href="#oferta">Oferta</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a href="https://pay.cakto.com.br/xghj6j4" class="btn mobile-menu__cta" target="_blank" rel="noopener">QUERO MINHA VAGA AGORA</a>
+  <a href="https://pay.cakto.com.br/xghj6j4" class="btn mobile-menu__cta" target="_blank" rel="noopener">GARANTIR MINHA VAGA</a>
 </div>
 
 <!-- HERO -->
@@ -823,7 +850,7 @@
     <div class="hero-announcement reveal-fade" data-delay="120">
       GLOWA · O método que muda como você se vê
     </div>
-    <div class="hero-product-name" id="glowaName">Glowa</div>
+    <div class="hero-product-name" id="glowaName">Glow<span class="hero-product-accent">a</span></div>
     <h1 class="hero-title reveal-fade" data-delay="400">
       Chega de se olhar no espelho<br>
       <em>e não gostar do que vê.</em>
@@ -833,7 +860,7 @@
     </p>
     <div class="hero-cta reveal-fade" data-delay="800">
       <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">
-        SIM, EU QUERO ME OLHAR E GOSTAR DO QUE VEJO →
+        EU QUERO MEU GLOW UP AGORA →
       </a>
     </div>
   </div>
@@ -863,7 +890,7 @@
         O problema nunca foi falta de vontade. Foi falta de método. O GLOWA organiza tudo o que realmente importa na ordem certa, para você finalmente ver resultado no espelho.
       </p>
       <div class="video-section__cta reveal-fade">
-        <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">EU NÃO VOU MAIS TENTAR SOZINHA</a>
+        <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">CANSEI DE ME ESCONDER. QUERO O GLOWA</a>
       </div>
     </div>
     <div class="reveal-fade">
@@ -919,7 +946,7 @@
       </div>
     </div>
     <div class="section-cta reveal-fade">
-      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">EU DECIDI TRANSFORMAR MINHA IMAGEM</a>
+      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">EU MEREÇO ME VALORIZAR →</a>
     </div>
   </div>
 </section>
@@ -970,7 +997,7 @@
       </div>
     </div>
     <div class="section-cta reveal-fade">
-      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">QUERO O MÉTODO E TODOS OS BÔNUS ANTES QUE ACABE</a>
+      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">QUERO TUDO ANTES QUE ACABE →</a>
     </div>
   </div>
 </section>
@@ -1009,7 +1036,7 @@
       </figure>
     </div>
     <div class="section-cta reveal-fade">
-      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">EU TAMBÉM QUERO ESSE RESULTADO NO MEU ESPELHO</a>
+      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">EU TAMBÉM QUERO ME OLHAR ASSIM →</a>
     </div>
   </div>
 </section>
@@ -1039,7 +1066,7 @@
       </div>
     </div>
     <div class="section-cta reveal-fade">
-      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">CHEGA. HOJE EU SAIO DESSE CICLO</a>
+      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">CHEGA DE ME DEIXAR POR ÚLTIMO</a>
     </div>
   </div>
 </section>
@@ -1105,7 +1132,7 @@
         </ul>
         <div style="margin-top:26px;">
           <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener" style="width:100%;">
-            SIM. EU VOU GARANTIR MINHA VAGA ANTES QUE ACABE
+            SIM. EU GARANTO MINHA VAGA AGORA
           </a>
         </div>
       </div>
@@ -1126,7 +1153,7 @@
       </div>
       <p class="guarantee__microcopy reveal-fade">Consulte os termos e critérios da garantia para verificar condições, prazo e procedimento de reembolso.</p>
       <div class="guarantee__cta reveal-fade">
-        <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">QUERO ENTRAR COM 30 DIAS DE GARANTIA</a>
+        <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">ENTRAR SEM RISCO. QUERO AGORA</a>
       </div>
     </div>
     <div class="guarantee__stat reveal-fade">
@@ -1150,7 +1177,7 @@
       <div class="eyebrow reveal-fade" style="margin-bottom:12px;">Última chance de se priorizar</div>
       <h3 class="section-title reveal-line">Você já sabe o que precisa fazer.<br>Agora falta só decidir por você.</h3>
       <div class="faq__transition-cta reveal-fade">
-        <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">SIM. EU ESTOU PRONTA PARA O GLOWA</a>
+        <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">EU JÁ DECIDI. QUERO AGORA</a>
       </div>
     </div>
   </div>
@@ -1162,7 +1189,7 @@
     <h2 class="section-title reveal-line">Daqui a 30 dias você pode se olhar no espelho<br>e finalmente <span>gostar do que vê.</span></h2>
     <p class="lede reveal-fade">Ou pode continuar no mesmo ciclo de produto aleatório, filtro e frustração. A escolha é sua. O GLOWA já está pronto.</p>
     <div class="cta-final__cta reveal-fade">
-      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">NÃO VOU ADIAR MEU GLOW UP MAIS UMA VEZ</a>
+      <a href="https://pay.cakto.com.br/xghj6j4" class="btn" target="_blank" rel="noopener">HOJE EU ME PRIORIZO. QUERO AGORA</a>
     </div>
   </div>
 </section>
