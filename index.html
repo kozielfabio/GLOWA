@@ -538,7 +538,7 @@
   /* ========== MENTOR ========== */
   .mentor { background: var(--white); }
   .mentor .wrap {
-    display: grid; grid-template-columns: 40% 1fr; gap: 52px; align-items: center;
+    display: grid; grid-template-columns: 38% 1fr; gap: 52px; align-items: start;
   }
   .mentor__media {
     position: relative;
@@ -558,12 +558,17 @@
     color: var(--ink-muted); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
     text-align: center; padding: 24px;
   }
-  .mentor__copy .section-title { margin-bottom: 16px; }
+  .mentor__copy .section-title { margin-bottom: 8px; }
+  .mentor__name {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--pink-deep); margin-bottom: 14px;
+  }
   .mentor__lead {
     font-size: 15.5px; font-weight: 600; color: var(--pink-deep);
-    max-width: 440px; margin-bottom: 14px;
+    max-width: 520px; margin-bottom: 14px;
   }
-  .mentor__social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+  .mentor__copy .lede { max-width: 520px; }
+  .mentor__social { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
   .mentor__social-link {
     display: inline-flex; align-items: center; gap: 8px;
     padding: 10px 16px;
@@ -578,7 +583,77 @@
     border-color: var(--pink);
     background: var(--pink-soft);
   }
-  @media (max-width: 900px) { .mentor .wrap { grid-template-columns: 1fr; gap: 32px; } }
+  .team {
+    margin-top: 56px;
+  }
+  .team__title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(1.4rem, 2.8vw, 1.8rem);
+    font-weight: 600;
+    color: var(--ink);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .team__subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-bottom: 32px;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .team-card {
+    background: var(--blush);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s var(--ease);
+  }
+  .team-card:hover { transform: translateY(-3px); }
+  .team-card__photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: var(--pink-soft);
+  }
+  .team-card__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .team-card__body { padding: 18px 16px 20px; }
+  .team-card__name {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .team-card__role {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--pink-deep);
+    margin-bottom: 10px;
+  }
+  .team-card__text {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  @media (max-width: 900px) {
+    .mentor .wrap { grid-template-columns: 1fr; gap: 28px; }
+    .team-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .team-grid { grid-template-columns: 1fr; max-width: 320px; margin-inline: auto; }
+  }
 
   /* ========== TESTIMONIALS ========== */
   .testimonials { background: var(--blush); }
@@ -1075,24 +1150,68 @@
   </div>
 </section>
 
-<!-- MENTOR -->
+<!-- MENTOR + TIME -->
 <section class="mentor">
   <div class="wrap">
     <div class="mentor__media reveal-fade">
-      <img src="src/img/mentora.jpg" alt="Mentora GLOWA" loading="lazy"
+      <img src="src/img/mentora.jpg" alt="Nathaly França — Expert GLOWA" loading="lazy"
            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="mentor__placeholder" style="display:none;">[ Foto da mentora ]</div>
     </div>
     <div class="mentor__copy">
-      <h2 class="section-title reveal-line">Eu não criei o GLOWA para você parecer comigo.</h2>
-      <p class="mentor__lead reveal-fade">Criei para você finalmente se olhar e sentir: “essa sou eu, e eu gosto do que vejo”.</p>
+      <div class="eyebrow reveal-line">A expert por trás do GLOWA</div>
+      <h2 class="section-title reveal-line">Nathaly França</h2>
+      <p class="mentor__name reveal-fade">Fundadora &amp; Expert</p>
       <p class="lede reveal-fade">
-        Eu já fui a mulher que se escondia atrás de filtro, que comprava produto sem saber o que fazia, que se comparava e se sentia menos. O GLOWA nasceu pra que você não precise passar por isso sozinha.
+        Eu criei o Glowa com um propósito claro: ajudar mulheres a se cuidarem de forma real, consciente e sem tentarem se encaixar em padrões impossíveis. Aqui não ensinamos a copiar um estereótipo. Ensinamos a potencializar a sua própria beleza, fortalecer a autoestima e construir uma relação mais leve e verdadeira consigo mesma.
+      </p>
+      <p class="lede reveal-fade" style="margin-top:12px;">
+        O Glowa nasceu da vontade de unir cuidado prático (pele, cabelo, estilo, presença…) com desenvolvimento interno. Porque glow up de verdade só acontece quando os dois lados caminham juntos.
+      </p>
+      <p class="lede reveal-fade" style="margin-top:12px;">
+        Eu conduzo o método, a estrutura e a visão do projeto. E tenho o prazer de contar com um time de meninas talentosas que somam comigo nessa missão.
       </p>
       <div class="mentor__social reveal-fade">
         <a href="https://www.instagram.com/franccaly/" class="mentor__social-link" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@itsmefrancca?lang=en" class="mentor__social-link" target="_blank" rel="noopener">TikTok</a>
       </div>
+    </div>
+  </div>
+
+  <div class="wrap team">
+    <h3 class="team__title reveal-line">O time GLOWA</h3>
+    <p class="team__subtitle reveal-fade">Especialistas que caminham com você em cada etapa da transformação.</p>
+    <div class="team-grid">
+      <article class="team-card reveal-fade">
+        <div class="team-card__photo">
+          <img src="src/img/bianca.jpg" alt="Bianca — Especialista em pele e autocuidado" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <div class="team-card__name">Bianca</div>
+          <div class="team-card__role">Pele · Cabelo · Autocuidado</div>
+          <p class="team-card__text">Bianca traz leveza e praticidade para o dia a dia, ajudando as meninas a construírem rotinas reais e sustentáveis de cuidado.</p>
+        </div>
+      </article>
+      <article class="team-card reveal-fade">
+        <div class="team-card__photo">
+          <img src="src/img/iris.jpg" alt="Iris — Especialista em estilo e maquiagem" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <div class="team-card__name">Iris</div>
+          <div class="team-card__role">Estilo · Presença · Maquiagem</div>
+          <p class="team-card__text">Iris contribui com um olhar sofisticado e atual, ensinando como valorizar a própria imagem com autenticidade e confiança.</p>
+        </div>
+      </article>
+      <article class="team-card reveal-fade">
+        <div class="team-card__photo">
+          <img src="src/img/rafaela.jpg" alt="Rafaela — Especialista em skincare e autoestima" loading="lazy">
+        </div>
+        <div class="team-card__body">
+          <div class="team-card__name">Rafaela</div>
+          <div class="team-card__role">Skincare · Hábitos · Autoestima</div>
+          <p class="team-card__text">Rafaela traz uma abordagem acolhedora e realista, ajudando as meninas a se cuidarem com mais consciência e carinho.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
