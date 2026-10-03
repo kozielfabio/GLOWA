@@ -490,11 +490,10 @@
   .results__head .section-title { margin: 12px auto 0; }
   .results-grid {
     display: grid; gap: 22px;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 860px; margin-inline: auto;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 720px; margin-inline: auto;
   }
-  @media (max-width: 900px) { .results-grid { grid-template-columns: 1fr 1fr; max-width: 540px; } }
-  @media (max-width: 560px) { .results-grid { grid-template-columns: 1fr; max-width: 360px; } }
+  @media (max-width: 640px) { .results-grid { grid-template-columns: 1fr; max-width: 360px; } }
   .transformation__media {
     position: relative; aspect-ratio: 3/4; overflow: hidden;
     border-radius: 10px;
@@ -998,27 +997,35 @@
     <div class="results-grid">
       <figure class="transformation reveal-fade">
         <div class="transformation__media">
-          <img src="assets/results/01-transformacao.jpg" alt="Transformação aluna 01" loading="lazy"
+          <img src="src/img/1.png" alt="Antes e depois — cabelo e presença" loading="lazy"
                onerror="this.style.display='none'; this.parentElement.querySelector('.transformation__placeholder').style.display='flex';">
-          <div class="transformation__placeholder">[ Antes / Depois: Aluna 01 ]</div>
+          <div class="transformation__placeholder">[ Antes / Depois ]</div>
         </div>
-        <div class="transformation__caption">Aluna <span>01</span></div>
+        <div class="transformation__caption">Cabelo + presença <span>01</span></div>
       </figure>
       <figure class="transformation reveal-fade">
         <div class="transformation__media">
-          <img src="assets/results/02-transformacao.jpg" alt="Transformação aluna 02" loading="lazy"
+          <img src="src/img/2.png" alt="Antes e depois — visual e confiança" loading="lazy"
                onerror="this.style.display='none'; this.parentElement.querySelector('.transformation__placeholder').style.display='flex';">
-          <div class="transformation__placeholder">[ Antes / Depois: Aluna 02 ]</div>
+          <div class="transformation__placeholder">[ Antes / Depois ]</div>
         </div>
-        <div class="transformation__caption">Aluna <span>02</span></div>
+        <div class="transformation__caption">Visual + confiança <span>02</span></div>
       </figure>
       <figure class="transformation reveal-fade">
         <div class="transformation__media">
-          <img src="assets/results/03-transformacao.jpg" alt="Transformação aluna 03" loading="lazy"
+          <img src="src/img/3.png" alt="Antes e depois — estilo e brilho" loading="lazy"
                onerror="this.style.display='none'; this.parentElement.querySelector('.transformation__placeholder').style.display='flex';">
-          <div class="transformation__placeholder">[ Antes / Depois: Aluna 03 ]</div>
+          <div class="transformation__placeholder">[ Antes / Depois ]</div>
         </div>
-        <div class="transformation__caption">Aluna <span>03</span></div>
+        <div class="transformation__caption">Estilo + brilho <span>03</span></div>
+      </figure>
+      <figure class="transformation reveal-fade">
+        <div class="transformation__media">
+          <img src="src/img/4.png" alt="Antes e depois — glow e sofisticação" loading="lazy"
+               onerror="this.style.display='none'; this.parentElement.querySelector('.transformation__placeholder').style.display='flex';">
+          <div class="transformation__placeholder">[ Antes / Depois ]</div>
+        </div>
+        <div class="transformation__caption">Glow + sofisticação <span>04</span></div>
       </figure>
     </div>
     <div class="section-cta reveal-fade">
