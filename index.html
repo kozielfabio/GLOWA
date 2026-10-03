@@ -877,35 +877,6 @@
   </div>
 </section>
 
-<!-- VÍDEO -->
-<section class="video-section">
-  <div class="wrap">
-    <div class="video-section__copy">
-      <div class="eyebrow reveal-line">Assista antes de decidir</div>
-      <h2 class="section-title reveal-line" style="margin-top:12px;">
-        Quantas vezes você já prometeu<br>
-        <em style="font-style:italic;color:var(--pink-deep);">“dessa vez eu me cuido”</em>?
-      </h2>
-      <p class="lede reveal-fade" style="margin-top:16px;">
-        O problema nunca foi falta de vontade. Foi falta de método. O GLOWA organiza tudo o que realmente importa na ordem certa, para você finalmente ver resultado no espelho.
-      </p>
-      <div class="video-section__cta reveal-fade">
-        <a href="https://pay.cakto.com.br/344n4qz_1079282" class="btn" target="_blank" rel="noopener">CANSEI DE ME ESCONDER. QUERO O GLOWA</a>
-      </div>
-    </div>
-    <div class="reveal-fade">
-      <div class="video-container">
-        <div class="video-container__mark" aria-hidden="true">G</div>
-        <video class="video-player" id="glowVideo" controls playsinline preload="metadata">
-          <source src="assets/videos/glowa.mp4" type="video/mp4">
-          Seu navegador não suporta a reprodução deste vídeo.
-        </video>
-        <div class="video-placeholder" id="videoPlaceholder">[ Vídeo GLOWA 9:16 ]</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- MÓDULOS -->
 <section class="modules" id="conteudo">
   <div class="wrap">
@@ -1117,8 +1088,8 @@
       </p>
       <div class="offer__price-block reveal-fade">
         <div class="offer__from">De R$ 997 por apenas</div>
-        <div class="offer__price"><span>R$</span>197</div>
-        <div class="offer__installments">ou 12x de R$ 19,70</div>
+        <div class="offer__price"><span>R$</span>37,00</div>
+        <div class="offer__installments">pagamento à vista</div>
         <div class="offer__urgency">⏰ Oferta por tempo limitado · Vagas reduzidas</div>
         <ul class="offer__list">
           <li>Método GLOWA completo (6 módulos)</li>
@@ -1320,15 +1291,6 @@
   }, { threshold: 0.18, rootMargin: '0px 0px -40px 0px' });
   document.getElementById('glowaName').setAttribute('data-delay', '200');
   revealables.forEach(el => io.observe(el));
-
-  const video = document.getElementById('glowVideo');
-  const videoPlaceholder = document.getElementById('videoPlaceholder');
-  if (video) {
-    video.addEventListener('error', () => {
-      video.style.display = 'none';
-      if (videoPlaceholder) videoPlaceholder.style.display = 'flex';
-    });
-  }
 </script>
 </body>
 </html>
