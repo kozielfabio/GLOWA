@@ -541,11 +541,18 @@
     display: grid; grid-template-columns: 40% 1fr; gap: 52px; align-items: center;
   }
   .mentor__media {
-    position: relative; aspect-ratio: 4/5;
-    background: var(--pink-soft); overflow: hidden; border-radius: 10px;
+    position: relative;
+    background: var(--pink-soft);
+    overflow: hidden;
+    border-radius: 12px;
     border: 1px solid var(--border-soft);
   }
-  .mentor__media img { width: 100%; height: 100%; object-fit: cover; }
+  .mentor__media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
   .mentor__placeholder {
     position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
     color: var(--ink-muted); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
@@ -1072,7 +1079,7 @@
 <section class="mentor">
   <div class="wrap">
     <div class="mentor__media reveal-fade">
-      <img src="assets/mentor/mentor-about.jpg" alt="Mentora GLOWA" loading="lazy"
+      <img src="src/img/mentora.jpg" alt="Mentora GLOWA" loading="lazy"
            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="mentor__placeholder" style="display:none;">[ Foto da mentora ]</div>
     </div>
@@ -1083,8 +1090,8 @@
         Eu já fui a mulher que se escondia atrás de filtro, que comprava produto sem saber o que fazia, que se comparava e se sentia menos. O GLOWA nasceu pra que você não precise passar por isso sozinha.
       </p>
       <div class="mentor__social reveal-fade">
-        <a href="#" class="mentor__social-link" target="_blank" rel="noopener">Instagram</a>
-        <a href="#" class="mentor__social-link" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.instagram.com/franccaly/" class="mentor__social-link" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@itsmefrancca?lang=en" class="mentor__social-link" target="_blank" rel="noopener">TikTok</a>
       </div>
     </div>
   </div>
