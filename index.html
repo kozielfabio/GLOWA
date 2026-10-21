@@ -449,9 +449,10 @@
   .bonuses__head .section-title { margin: 12px auto 0; max-width: 640px; }
   .bonuses-grid {
     display: grid; gap: 18px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 860px;
+    margin-inline: auto;
   }
-  @media (max-width: 900px) { .bonuses-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 560px) { .bonuses-grid { grid-template-columns: 1fr; } }
   .bonus-card {
     background: var(--white);
@@ -712,8 +713,7 @@
     display: grid; gap: 18px;
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 960px) { .testimonial-grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 640px) { .testimonial-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 960px) { .testimonial-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; } }
   .testimonial-card {
     background: var(--white);
     border: 1px solid var(--border-soft);
@@ -1535,30 +1535,18 @@
       </div>
       <div class="bonus-card reveal-fade">
         <div class="bonus-card__tag">Bônus 02</div>
-        <div class="bonus-card__title">Cronograma Capilar Feminino</div>
-        <p class="bonus-card__text">Plano de 30 dias para hidratação, nutrição e reconstrução. Cabelo mais forte e brilhante.</p>
-        <div class="bonus-card__value">Valor: R$ 67</div>
-      </div>
-      <div class="bonus-card reveal-fade">
-        <div class="bonus-card__tag">Bônus 03</div>
-        <div class="bonus-card__title">Biblioteca de Looks do Dia a Dia</div>
-        <p class="bonus-card__text">Combinações práticas para trabalho, encontro e eventos, usando o que você já tem.</p>
-        <div class="bonus-card__value">Valor: R$ 87</div>
-      </div>
-      <div class="bonus-card reveal-fade">
-        <div class="bonus-card__tag">Bônus 04</div>
-        <div class="bonus-card__title">Rotina de Autocuidado em 15 min</div>
-        <p class="bonus-card__text">Checklist diário e semanal para manter o glow mesmo com a vida corrida.</p>
-        <div class="bonus-card__value">Valor: R$ 47</div>
-      </div>
-      <div class="bonus-card reveal-fade">
-        <div class="bonus-card__tag">Bônus 05</div>
         <div class="bonus-card__title">Guia de Maquiagem Rápida</div>
         <p class="bonus-card__text">Looks de 5 e 10 minutos que elevam a aparência sem esforço.</p>
         <div class="bonus-card__value">Valor: R$ 57</div>
       </div>
       <div class="bonus-card reveal-fade">
-        <div class="bonus-card__tag">Bônus 06</div>
+        <div class="bonus-card__tag">Bônus 03</div>
+        <div class="bonus-card__title">Receitas Saudáveis para o Glow</div>
+        <p class="bonus-card__text">Receitas práticas e gostosas para nutrir sua pele, seu cabelo e sua energia por dentro.</p>
+        <div class="bonus-card__value">Valor: R$ 79</div>
+      </div>
+      <div class="bonus-card reveal-fade">
+        <div class="bonus-card__tag">Bônus 04</div>
         <div class="bonus-card__title">Comunidade Exclusiva GLOWA</div>
         <p class="bonus-card__text">Grupo privado de mulheres aplicando o método. Troca de resultados e suporte.</p>
         <div class="bonus-card__value">Valor: R$ 197</div>
@@ -1709,7 +1697,7 @@
       <div class="offer__badge reveal-fade">✦ Oferta especial</div>
       <h2 class="section-title reveal-line">Hoje você decide se continua se escondendo ou se assume o seu glow.</h2>
       <p class="lede reveal-fade" style="margin:14px auto 0;text-align:center;">
-        Método completo + 6 bônus + comunidade de mulheres que decidiram se priorizar.
+        Método completo + 4 bônus + comunidade de mulheres que decidiram se priorizar.
       </p>
       <div class="offer__price-block reveal-fade">
         <div class="offer__from">De R$ 197 por apenas</div>
@@ -1718,10 +1706,8 @@
         <ul class="offer__list">
           <li>Método GLOWA completo (9 módulos)</li>
           <li>Guia de Skincare por Tipo de Pele</li>
-          <li>Cronograma Capilar Feminino</li>
-          <li>Biblioteca de Looks do Dia a Dia</li>
-          <li>Rotina de Autocuidado em 15 min</li>
           <li>Guia de Maquiagem Rápida</li>
+          <li>Receitas Saudáveis para o Glow</li>
           <li>Comunidade exclusiva de alunas</li>
           <li>Garantia de 30 dias</li>
         </ul>
@@ -1835,12 +1821,9 @@
   });
 
   const testimonials = [
-    { id: "01", quote: "Eu me olhava no espelho e sentia que faltava alguma coisa. Depois do GLOWA, pela primeira vez em anos, eu me olhei e gostei do que vi. De verdade.", author: "Aluna GLOWA 01" },
-    { id: "02", quote: "Pare de comprar produto aleatório. Eu gastava e a pele continuava a mesma. Agora eu sei o que funciona pra mim e o glow aparece sem filtro.", author: "Aluna GLOWA 02" },
-    { id: "03", quote: "Eu achava que glow up era filtro e maquiagem pesada. O método me mostrou que presença e consistência mudam tudo. As pessoas começaram a reparar em mim.", author: "Aluna GLOWA 03" },
-    { id: "04", quote: "A maior virada foi me priorizar. Parei de deixar o autocuidado por último. E o resultado no espelho foi a prova de que eu merecia isso.", author: "Aluna GLOWA 04" },
-    { id: "05", quote: "Eu consumia conteúdo o dia inteiro e não aplicava nada. Com o GLOWA eu finalmente soube por onde começar e o que fazer em cada etapa.", author: "Aluna GLOWA 05" },
-    { id: "06", quote: "Não queria parecer outra pessoa. Queria me sentir bonita e confiante sendo eu. Essa mudança de perspectiva valeu mais do que qualquer produto que eu já comprei.", author: "Aluna GLOWA 06" }
+    { id: "01", quote: "girlsss eu juro que quase chorei no espelho 🥹 sempre achei que faltava alguma coisa em mim e o GLOWA me mostrou que era só falta de método. hoje eu me arrumo e me sinto linda de verdade 💖", author: "Aluna GLOWA 💕" },
+    { id: "02", quote: "gente, parei de gastar com produto aleatório!! 🙈 descobri o que funciona pra minha pele e minha rotina ficou super simples. minha prima até perguntou qual filtro eu tava usando kkkk ✨", author: "Aluna GLOWA 🌸" },
+    { id: "03", quote: "o que mais mudou foi eu me priorizar 🥰 antes o autocuidado era sempre o último da lista, agora é meu momento favorito do dia. me sinto mais confiante em tudo, até no trabalho 🎀", author: "Aluna GLOWA 🤍" }
   ];
   document.getElementById('testimonialGrid').innerHTML = testimonials.map((t, i) => `
     <article class="testimonial-card reveal-fade" data-delay="${i * 80}">
@@ -1858,7 +1841,7 @@
     { question: "O GLOWA é só para mulheres?", answer: "Sim. O método foi criado especialmente para o público feminino, com linguagem, exemplos e foco nas necessidades das mulheres." },
     { question: "Vou precisar gastar muito em produtos?", answer: "Não necessariamente. O foco é te ensinar a escolher melhor e usar o que já faz sentido para a sua pele e o seu orçamento." },
     { question: "Preciso mudar completamente meu estilo?", answer: "Não. O objetivo não é apagar quem você é. É te ajudar a identificar o que favorece a sua imagem e construir uma versão mais refinada de você mesma." },
-    { question: "Consigo aplicar mesmo com a rotina corrida?", answer: "Sim. Há orientações de rotinas curtas (incluindo o bônus de 15 minutos) para que o autocuidado caiba na vida real." },
+    { question: "Consigo aplicar mesmo com a rotina corrida?", answer: "Sim. O método tem orientações de rotinas curtas e práticas para que o autocuidado caiba na vida real." },
     { question: "Por quanto tempo terei acesso?", answer: "Consulte as condições na página de pagamento para ver o período de acesso da sua compra." },
     { question: "Posso assistir pelo celular?", answer: "Sim. O conteúdo pode ser acessado pelo celular ou computador." },
     { question: "Não recebi meu acesso. O que faço?", answer: "Verifique a caixa de entrada, spam e promoções do e-mail usado na compra. Se ainda não encontrar, use o canal de suporte informado após a compra." }
